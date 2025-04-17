@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reserva tu Cita - Alvaro Guirao Barber Studio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #f4f4f4;
+      line-height: 1.6;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .reservas-citas {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+    .reservas-citas form {
+      display: flex;
+      flex-direction: column;
+    }
+    .reservas-citas label {
+      color: #fff;
+      margin-bottom: 5px;
+    }
+    .reservas-citas input {
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #333;
+      background-color: #333;
+      color: #fff;
+    }
+    .reservas-citas button {
+      padding: 15px;
+      background-color: #fff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2em;
+    }
+    .reservas-citas button:hover {
+      background-color: #FF0000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Alvaro Guirao Barber Studio</h1>
+    <p>Reserva tu cita para un corte y estilo único.</p>
+  </header>
+
+  <section class="reservas-citas">
+    <h2>📅 Reserva tu cita</h2>
+    <form action="procesar_reserva.php" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required placeholder="Tu número de teléfono">
+
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha" required>
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" name="hora" required>
+
+      <button type="submit">Confirmar Reserva</button>
+    </form>
+  </section>
+
+</body>
+</html>
