@@ -12,9 +12,14 @@
       color: #f4f4f4;
       line-height: 1.6;
     }
+
+    /* Aquí va el código que configura el fondo de la cabecera */
     header {
-      background: #000;
-      color: #fff; /* Cambié a blanco */
+      background-image: url('fondo.jpg'); /* Ruta de la imagen, pon la que corresponda */
+      background-size: cover; /* La imagen cubre todo el header */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      color: #fff; /* Asegúrate de que el texto sea blanco para que se vea sobre la imagen */
       padding: 40px 20px;
       text-align: center;
     }
@@ -22,19 +27,23 @@
       margin: 0;
       font-size: 3em;
     }
+    header p {
+      font-size: 1.5em;
+    }
+
     section {
       padding: 40px 20px;
       max-width: 800px;
       margin: auto;
     }
     .servicios, .horario, .reservas {
-      background-color: #1e1e1e; /* Fondo oscuro */
+      background-color: #1e1e1e;
       border-radius: 10px;
       padding: 30px;
       margin-bottom: 30px;
     }
     .servicios h2, .horario h2, .reservas h2 {
-      color: #fff; /* Color blanco */
+      color: #fff;
       margin-top: 0;
     }
     .servicios ul, .horario ul {
@@ -44,7 +53,7 @@
     .servicios ul li, .horario ul li {
       padding: 10px 0;
       border-bottom: 1px solid #333;
-      color: #fff; /* Ahora en blanco */
+      color: #fff;
     }
     footer {
       background: #000;
@@ -53,17 +62,16 @@
       padding: 20px;
     }
     .redes a {
-      color: #fff; /* Color blanco */
+      color: #fff;
       margin: 0 10px;
       text-decoration: none;
     }
     .redes a:hover {
       text-decoration: underline;
     }
-    /* Estilos para el botón de reserva */
     .reservas button {
       padding: 15px 30px;
-      background-color: #fff; /* Color blanco */
+      background-color: #fff;
       color: #000;
       border: none;
       border-radius: 5px;
