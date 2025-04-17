@@ -3,472 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Álvaro Guirao Barber Studio</title>
+  <title>Barbería La Flota</title>
   <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-    }
     body {
+      margin: 0;
       font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #f4f4f4;
       line-height: 1.6;
-      scroll-behavior: smooth;
-      background: url('https://www.transparenttextures.com/patterns/marble.png'); /* Fondo de mármol */
-      background-color: #f0f0f0; /* Color de fondo alternativo */
     }
     header {
-      background: #111; /* Fondo negro */
-      color: white;
-      padding: 80px 20px;
+      background: #000;
+      color: #f4c10f;
+      padding: 40px 20px;
       text-align: center;
-      border-radius: 10px;
     }
-    nav {
-      background: #000; /* Fondo negro */
-      padding: 10px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-    }
-    nav ul li {
-      margin: 0 15px;
-    }
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
+    header h1 {
+      margin: 0;
+      font-size: 3em;
     }
     section {
-      padding: 60px 20px;
-      max-width: 1000px;
+      padding: 40px 20px;
+      max-width: 800px;
       margin: auto;
-      background: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+    }
+    .servicios, .horario {
+      background-color: #1e1e1e;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-bottom: 30px;
     }
-    .servicios, .galeria {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
+    h2 {
+      color: #f4c10f;
+      margin-top: 0;
     }
-    .servicio, .foto {
-      flex: 1 1 200px;
-      background: #000; /* Fondo negro */
-      color: white; /* Texto blanco */
-      padding: 20px;
-      text-align: center;
-      border-radius: 10px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    ul {
+      list-style: none;
+      padding-left: 0;
     }
-    .contacto form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    .contacto input, .contacto textarea {
-      padding: 10px;
-      font-size: 1em;
-      border: 1px solid #ccc; /* Borde gris claro */
-      border-radius: 5px;
-    }
-    .contacto button {
-      background: #111; /* Fondo negro */
-      color: white;
-      padding: 10px;
-      border: none;
-      cursor: pointer;
+    ul li {
+      padding: 10px 0;
+      border-bottom: 1px solid #333;
     }
     footer {
-      background: #111; /* Fondo negro */
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    .reserva {
-      background: #28a745; /* Color verde para el botón de reserva */
-      color: white;
-      padding: 15px;
-      text-align: center;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 20px;
-      display: inline-block;
-      text-decoration: none;
-    }
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0,0,0,0.7);
-      padding-top: 60px;
-    }
-    .modal-content {
-      background-color: #fefefe; /* Fondo blanco para el modal */
-      margin: 5% auto;
-      padding: 20px;
-      border: 1px solid #888;
-      width: 80%;
-      border-radius: 10px;
-    }
-    .close {
+      background: #000;
       color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
+      text-align: center;
+      padding: 20px;
     }
-    .close:hover,
-    .close:focus {
-      color: black;
+    .redes a {
+      color: #f4c10f;
+      margin: 0 10px;
       text-decoration: none;
-      cursor: pointer;
+    }
+    .redes a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="#inicio">
-
-        <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Álvaro Guirao Barber Studio</title>
-  <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.6;
-      scroll-behavior: smooth;
-    }
-    header {
-      background: #111;
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-    }
-    nav {
-      background: #222;
-      padding: 10px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-    }
-    nav ul li {
-      margin: 0 15px;
-    }
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .servicios, .galeria {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-    .servicio, .foto {
-      flex: 1 1 200px;
-      background: #f0f0f0;
-      padding: 20px;
-      text-align: center;
-      border-radius: 10px;
-    }
-    .contacto form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    .contacto input, .contacto textarea {
-      padding: 10px;
-      font-size: 1em;
-    }
-    .contacto button {
-      background: #111;
-      color: white;
-      padding: 10px;
-      border: none;
-      cursor: pointer;
-    }
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
-</head>
-<body>
-
-  <nav>
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#galeria">Galería</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-
-  <header id="inicio">
-    <h1>Álvaro Guirao Barber Studio</h1>
-    <p>Estilo, precisión y barba bien hecha</p>
+  <header>
+    <h1>Barbería La Flota</h1>
+    <p>Estilo puro. Corte limpio.</p>
   </header>
 
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <div class="servicios">
-      <div class="servicio">
-        <h3>Corte clásico</h3>
-        <p>El de toda la vida, con estilo.</p>
-      </div>
-      <div class="servicio">
-        <h3>Fade moderno</h3>
-        <p>Degradado limpio y a medida.</p>
-      </div>
-      <div class="servicio">
-        <h3>Afeitado premium</h3>
-        <p>Con navaja, toalla caliente y precisión.</p>
-      </div>
-    </div>
+  <section class="servicios">
+    <h2>💈 Servicios</h2>
+    <ul>
+      <li>Corte clásico - 12€</li>
+      <li>Fade / degradado - 14€</li>
+      <li>Arreglo de barba - 10€</li>
+      <li>Corte + barba - 20€</li>
+      <li>Diseños personalizados - desde 15€</li>
+    </ul>
   </section>
 
-  <section id="galeria">
-    <h2>Galería</h2>
-    <div class="galeria">
-      <div class="foto">📸 Corte estilo 1</div>
-      <div class="foto">📸 Corte estilo 2</div>
-      <div class="foto">📸 Corte estilo 3</div>
-    </div>
+  <section class="horario">
+    <h2>🕒 Horario</h2>
+    <ul>
+      <li>Lunes a Viernes: 10:00 - 14:00 / 17:00 - 20:30</li>
+      <li>Sábados: 10:00 - 14:00</li>
+      <li>Domingos: Cerrado</li>
+    </ul>
   </section>
 
-  <section id="contacto" class="contacto">
-    <h2>Contacto</h2>
-    <form>
-      <input type="text" placeholder="Tu nombre" required />
-      <input type="email" placeholder="Tu email" required />
-      <textarea rows="4" placeholder="Tu mensaje"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+  <section class="redes">
+    <h2>📱 Síguenos</h2>
+    <p>
+      <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+      <a href="https://wa.me/34xxxxxxxxx" target="_blank">WhatsApp</a> |
+      <a href="mailto:barberia@laflota.com">Email</a>
+    </p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Álvaro Guirao Barber Studio | Todos los derechos reservados</p>
+    <p>&copy; 2025 Barbería La Flota. Todos los derechos reservados.</p>
   </footer>
 
 </body>
 </html>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Álvaro Guirao Barber Studio</title>
-  <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.6;
-      scroll-behavior: smooth;
-      background: url('https://www.transparenttextures.com/patterns/marble.png'); /* Fondo de mármol */
-      background-color: #f0f0f0; /* Color de fondo alternativo */
-    }
-    header {
-      background: rgba(17, 17, 17, 0.8);
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-      border-radius: 10px;
-    }
-    nav {
-      background: rgba(34, 34, 34, 0.8);
-      padding: 10px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-    }
-    nav ul li {
-      margin: 0 15px;
-    }
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-      background: rgba
-
-    <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Álvaro Guirao Barber Studio</title>
-  <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.6;
-      scroll-behavior: smooth;
-      background: url('https://www.transparenttextures.com/patterns/marble.png'); /* Fondo de mármol */
-      background-color: #f0f0f0; /* Color de fondo alternativo */
-    }
-    header {
-      background: rgba(17, 17, 17, 0.8);
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-      border-radius: 10px;
-    }
-    nav {
-      background: rgba(34, 34, 34, 0.8);
-      padding: 10px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-    }
-    nav ul li {
-      margin: 0 15px;
-    }
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .servicios, .galeria {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-    .servicio, .foto {
-      flex: 1 1 200px;
-      background: #f0f0f0;
-      padding: 20px;
-      text-align: center;
-      border-radius: 10px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    }
-    .contacto form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    .contacto input, .contacto textarea {
-      padding: 10px;
-      font-size: 1em;
-    }
-    .contacto button {
-      background: #111;
-      color: white;
-      padding: 10px;
-      border: none;
-      cursor: pointer;
-    }
-    footer {
-      background: rgba(17, 17, 17, 0.8);
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    .reserva {
-      background: #28a745;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 20px;
-      display: inline-block;
-      text-decoration: none;
-    }
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0,0,0,0.7);
-      padding-top: 60px;
-    }
-    .modal-content {
-      background-color: #fefefe;
-      margin: 5% auto;
-      padding: 20px;
-      border: 1px solid #888;
-      width: 80%;
-      border-radius: 10px;
-    }
-    .close {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-    }
-    .close:hover,
-    .close:focus {
-      color: black;
-      text-decoration: none;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-
-  <nav>
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#sobre">Sobre Nosotros</a></
