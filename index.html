@@ -36,7 +36,10 @@
   background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
   z-index: 1; /* Asegúrate de que esté detrás del texto */
     }
-      
+      header h1, header p {
+  position: relative; /* Para que el texto esté por encima del fondo */
+  z-index: 2; /* Asegúrate de que el texto esté por encima del fondo */
+}
     header h1 {
       margin: 0;
        font-size: 4em; /* Tamaño de fuente más grande */
