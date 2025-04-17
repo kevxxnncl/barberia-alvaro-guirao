@@ -12,15 +12,18 @@
       font-family: 'Segoe UI', sans-serif;
       line-height: 1.6;
       scroll-behavior: smooth;
+      background: url('https://www.transparenttextures.com/patterns/marble.png'); /* Cambia esta URL por la imagen de mármol que prefieras */
+      background-color: #f0f0f0; /* Color de fondo alternativo */
     }
     header {
-      background: #111;
+      background: rgba(17, 17, 17, 0.8);
       color: white;
       padding: 80px 20px;
       text-align: center;
+      border-radius: 10px;
     }
     nav {
-      background: #222;
+      background: rgba(34, 34, 34, 0.8);
       padding: 10px 0;
       position: sticky;
       top: 0;
@@ -43,6 +46,9 @@
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     .servicios, .galeria {
       display: flex;
@@ -56,6 +62,7 @@
       padding: 20px;
       text-align: center;
       border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     }
     .contacto form {
       display: flex;
@@ -74,7 +81,7 @@
       cursor: pointer;
     }
     footer {
-      background: #111;
+      background: rgba(17, 17, 17, 0.8);
       color: white;
       text-align: center;
       padding: 20px;
@@ -87,6 +94,8 @@
       border-radius: 5px;
       cursor: pointer;
       margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
     }
     .modal {
       display: none;
@@ -97,8 +106,7 @@
       width: 100%;
       height: 100%;
       overflow: auto;
-      background-color: rgb(0,0,0);
-      background-color: rgba(0,0,0,0.4);
+      background-color: rgba(0,0,0,0.7);
       padding-top: 60px;
     }
     .modal-content {
@@ -107,6 +115,7 @@
       padding: 20px;
       border: 1px solid #888;
       width: 80%;
+      border-radius: 10px;
     }
     .close {
       color: #aaa;
@@ -126,30 +135,4 @@
 
   <nav>
     <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#galeria">Galería</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-      <li><a href="#reservas" class="reserva" id="openModal">Reservar</a></li>
-    </ul>
-  </nav>
-
-  <header id="inicio">
-    <h1>Álvaro Guirao Barber Studio</h1>
-    <p>Estilo, precisión y barba bien hecha</p>
-  </header>
-
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <div class="servicios">
-      <div class="servicio">
-        <h3>Corte clásico</h3>
-        <p>El de toda la vida, con estilo.</p>
-      </div>
-      <div class="servicio">
-        <h3>Fade moderno</h3>
-        <p>Degradado limpio y a medida.</p>
-      </div>
-      <div class="servicio">
-        <h3>Afeitado premium</h3>
-        <p>Con navaja
+      <li><a href="#inicio">Inicio
